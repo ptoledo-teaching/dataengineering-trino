@@ -1,0 +1,17 @@
+[Unit]
+Description=Trino
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+ExecStart=/opt/trino/bin/launcher run
+Restart=always
+
+Environment="JAVA_HOME=/opt/java/jdk-24"
+Environment="PATH=/opt/java/jdk-24/bin:/usr/bin"
+
+LimitNOFILE=131072
+
+[Install]
+WantedBy=multi-user.target
