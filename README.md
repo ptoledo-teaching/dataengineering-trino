@@ -23,16 +23,10 @@ sudo apt upgrade -y
 
 ### Installing necessary packages
 
-Trino will require some additional packages to run properly, such as `net-tools` for network management, Java 21 for the Hive Metastore, PostgreSQL for the Hive Metastore database and Java 24 for Trino itself.
+Trino will require some additional packages to run properly, such as `net-tools` for network management, Java 21 for the Hive Metastore, PostgreSQL for the Hive Metastore database and Java 25 for Trino itself.
 
 ```bash
 sudo apt install net-tools openjdk-21-jdk openjdk-25-jdk postgresql  -y
-# sudo mkdir -p /opt/java
-# sudo chown -R ubuntu:ubuntu /opt/java
-# cd /opt/java
-# wget https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.2%2B12/OpenJDK24U-jdk_x64_linux_hotspot_24.0.2_12.tar.gz
-# tar -xzf OpenJDK24U-jdk_x64_linux_hotspot_24.0.2_12.tar.gz
-# mv jdk-24* jdk-24
 ```
 
 ## Configuring Trino
