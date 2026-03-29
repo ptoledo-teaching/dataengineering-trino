@@ -1,3 +1,4 @@
+#!/bin/bash
 export JAVA_HOME=/usr/lib/jvm/java-21-openjdk-amd64
 export PATH=$JAVA_HOME/bin:$PATH
 export HADOOP_HOME=/opt/hadoop-3.4.3
